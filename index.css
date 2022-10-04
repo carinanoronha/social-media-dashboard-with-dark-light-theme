@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+html, main, body {
+    font: "Inter", sans-serif;
+    background-color: hsl(0, 0%, 100%);
+    width: 1440px;
+  }
+
+.bg {                                           /* Fundo cinza claro ao fundo */
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom-left-radius: 1rem;
+    background-color: hsl(228, 64%, 26%);   /* teste com azul...não está funcionando */
+    height: 21rem;
+    width: 52%;
+    z-index: -1;
+}
+
+.container1 {
+    font: "Inter", sans-serif;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas de tamanhos iguas, cada coluna tem uma fração */
+    grid-auto-rows: 100px;                 /* espaço entre um elemento interno e outro */
+    grid-gap: 5px 20px;                     
+    padding: 35px 150px 35px 150px;
+}
+
+.box {
+    font: "Inter", sans-serif;
+    background-color: hsl(225, 100%, 98%);
+    border-top: 5px solid blue;
+    padding: 28px;
+    width: 170px;
+    height: 120px;
+    border-radius: 5px;
+}
+
+.maintitle {                        /* Social Media Dashboard */
+    font: "Inter", sans-serif;
+    color: hsl(230, 17%, 14%);
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700; 
+    padding-left: 150px;
+    padding-top: 30px;
+}
+
+.maintitle p {                      /* Total Followers: 23,004 */
+    font: "Inter", sans-serif;
+    color: hsl(228, 12%, 44%);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding-top: 3px;
+}
+
+.icon1, .icon2, .icon3, .icon4 {
+    font: "Inter", sans-serif;
+    color: hsl(230, 17%, 14%);
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+    text-align-last: center;
+}
+
+.year {
+    font: "Inter", sans-serif;
+    color: hsl(230, 17%, 14%);
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 13px;
+}
+
+.followers {
+    font: "Inter", sans-serif;
+    color: hsl(228, 12%, 44%);
+    font-size: 12px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.today {
+    font: "Inter", sans-serif;
+    color: hsl(163, 72%, 41%);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.title2 {     
+    font: "Inter", sans-serif;                        /* Overview - Today */
+    color: hsl(228, 12%, 44%);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700; 
+    padding-left: 150px;
+    padding-top: 90px; 
+}
+
+
+.container2 {
+    font: "Inter", sans-serif;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas de tamanhos iguas, cada coluna tem uma fração */
+    grid-auto-rows: 145px;                 /* espaço entre um elemento interno e outro */
+    grid-gap: 10px;          
+    padding: 30px 150px;
+}
+
+.box2 {
+    font-family: "Inter", sans-serif;
+    background-color: hsl(225, 100%, 98%);
+    width: 200px;
+    height: 100px;
+    border-radius: 5px;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: dense;
+    padding: 1em;
+    gap: 1em;
+}
+  
+.overview-icon {
+    margin: 0;
+}
+  
+.label,
+.num {
+    font: "Inter", sans-serif;
+    grid-column: 1;
+    justify-self: start;
+    align-self: center;
+}
+
+.label {
+    color:  hsl(228, 12%, 44%);
+}
+  
+.overview-icon,
+.percent {
+    font: "Inter", sans-serif;
+    grid-column: 2;
+    justify-self: end;
+    align-self: center;
+    font-size: 11px; 
+    color: hsl(163, 72%, 41%);
+}
+
+.attribution { 
+    font: "Inter", sans-serif;
+    font-size: 11px; 
+    text-align: center; 
+    padding-top: 20px;
+}
+
+.attribution, a { 
+    font: "Inter", sans-serif;
+    color: hsl(228, 45%, 44%); 
+    padding-bottom: 10px;
+}
