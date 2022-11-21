@@ -1,137 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="index.css" id="theme-link">
   
-  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="./index.css">
-  
-  <title>Frontend Mentor | Social Media Dashboard Light/Dark Theme Built with HTML, CSS & JS</title>
+  <title>Social Media Dashboard</title>
 </head>
+<body class="dark-theme || light-theme">
 
-<body>
-<div class="bg"></div> <!-- fundo cinza clar a direita -->
-<main>
-  <div class="maintitle">Social Media Dashboard
-    <p>Total Followers: 23,004</p>
-</div>
+  <header class="dark-theme || light-theme">
+    <div class="header-mode"> <!-- header-wrapper!!! -->
 
-<div class="container1">
-  
-  <div class="box">
-      <div class="icon1">
-          <img src="images/icon-facebook.svg"> @nathanf
-      </div>
-      <div class="text1">
-            <div class="year">1987</div>
-            <div class="followers">Followers</div>
-            <div class="today">12 Today</div>
-      </div>
-  </div>
+      <div class="title-followers">
+        <h1>Social Media Dashboard</h1>
+        <h3>Total Followers: 23,004</h3>
+      </div> <!-- </title-followers> -->
 
-  <div class="box">
-      <div class="icon2">
-          <img src="images/icon-twitter.svg"> @nathanf
-      </div>
-      <div class="text2">
-            <div class="year">1044</div>
-            <div class="followers">Followers</div>
-            <div class="today">99 Today</div>
-      </div>
-  </div>
+      <hr>
 
-  <div class="box">
-        <div class="icon3">
-            <img src="images/icon-instagram.svg"> @realnathanf
-        </div>
-        <div class="text3">
-            <div class="year">11k</div>
-            <div class="followers">Followers</div>
-            <div class="today">1099 Today</div>
-        </div>
-  </div>
-      
-  <div class="box">
-        <div class="icon4">
-            <img src="images/icon-youtube.svg"> Nathan F.
-        </div>
-        <div class="text4">
-            <div class="year">8239</div>
-            <div class="followers">Subscribers</div>
-            <div class="today">144 Today</div>
-        </div>
-  </div>
-</div>
+      <div class="color-toggle"> <!-- Alternar cor -->
+        <p class="toggle">Dark Mode</p> 
+        <label class="switch"> <!-- Botão -->
+          <input id="toggle" class="dark-mode" type="checkbox" unchecked>
+          <span class="slider round"></span>
+        </label> <!-- </switch> -->
+      </div> <!-- </color-toggle> -->
+    </div> <!-- </header-mode> -->
+  </header>
 
-<div class="title2">Overview - Today</div>
+  <div class="container1"> <!-- kpi-wrapper!!! -->
 
-<div class="container2">
+    <div class="boxes1"> <!-- kpi-card!!! -->
+      <div class="card-top-facebook"></div>
+      <div class="card-top">
+        <div class="icon"><img src="images/icon-facebook.svg" alt="facebook"></div>
+        <div class="user"><p>@coding_master</p></div> <!-- handle!!! -->
+      </div> <!-- </card-top> -->
+      <div class="kpi">23K</div>
+      <div><h4 class="followers">FOLLOWERS</h4></div>
+      <div><p class="delta up">&#9652; 110 Today</p></div>
+    </div> <!-- </boxes1> -->
 
-  <div class="box2">
-        <p class="label">Page Views</p>
-        <p class="num">87</p>
-        <img src="./images/icon-facebook.svg" class="social-icon overview-icon">
-        <p class="percent">3%</p> 
+    <div class="boxes1">
+      <div class="card-top-twitter"></div>
+      <div class="card-top">
+        <div class="icon"><img src="images/icon-twitter.svg" alt="twitter"></div>
+        <div class="user"><p>@coding_master</p></div>
+      </div> <!-- </card-top> -->
+      <div class="kpi">1.2K</div>
+      <div><h4 class="followers">FOLLOWERS</h4></div>
+      <div><p class="delta up">&#9652; 73 Today</p></div>
+    </div> <!-- </boxes1> -->
+
+    <div class="boxes1">
+      <div class="card-top-instagram"></div>
+      <div class="card-top">
+        <div class="icon"><img src="images/icon-instagram.svg" alt="instagram"></div>
+        <div class="user"><p>@coding_master</p></div>
+      </div> <!-- </card-top> -->
+      <div class="kpi">185k</div>
+      <div><h4 class="followers">FOLLOWERS</h4></div>
+      <div><p class="delta up">&#9652; 600 Today</p></div>
+    </div> <!-- </boxes1> -->
+
+    <div class="boxes1">
+      <div class="card-top-youtube"></div>
+      <div class="card-top">
+        <div class="icon"><img src="images/icon-youtube.svg" alt="youtube"></div>
+        <div class="user"><p>Coding Master</p></div>
+      </div> <!-- </card-top> -->
+      <div class="kpi">10.5K</div>
+      <div><h4 class="followers">SUBSCRIBERS</h4></div>
+      <div><p class="delta down">&#9662; 104 Today</p></div>
+    </div> <!-- </boxes1> -->
+
+  </div> <!-- </container1> -->
+
+  <div class="overview-header">
+    <h2>Overview - today</h2>
+  </div> <!-- </overview-header> -->
+
+  <div class="overview"> <!-- overview-kpis!!! -->
+    <div class="container2"> <!-- overview-wrapper!!! -->
+
+      <div class="boxes2"> <!-- kpi-small!!! -->
+        <div class="page-views">Page Views</div>
+        <div class="logo"><img src="images/icon-facebook.svg" alt="facebook"></div>
+        <div class="views">153</div>
+        <div class="movement up">&#9652; 7%</div>
+      </div> <!-- </boxes2> -->
+      <div class="boxes2">
+        <div class="page-views">Likes</div>
+        <div class="logo"><img src="images/icon-facebook.svg" alt="facebook"></div>
+        <div class="views">78</div>
+        <div class="movement down">&#9662; 5%</div>
+      </div> <!-- </boxes2> -->
+      <div class="boxes2">
+        <div class="page-views">Likes</div>
+        <div class="logo"><img src="images/icon-instagram.svg" alt="instagram"></div>
+        <div class="views">7894</div>
+        <div class="movement up">&#9652; 4311%</div>
+      </div> <!-- </boxes2> -->
+      <div class="boxes2">
+        <div class="page-views">Profile Views</div>
+        <div class="logo"><img src="images/icon-instagram.svg" alt="instagram"></div>
+        <div class="views">76K</div>
+        <div class="movement up">&#9652; 3751%</div>
+      </div> <!-- </boxes2> -->
+      <div class="boxes2">
+        <div class="page-views">Retweets</div>
+        <div class="logo"><img src="images/icon-twitter.svg" alt="twitter"></div>
+        <div class="views">95</div>
+        <div class="movement up">&#9652; 124%</div>
+      </div> <!-- </boxes2> -->
+      <div class="boxes2">
+        <div class="page-views">Likes</div>
+        <div class="logo"><img src="images/icon-twitter.svg" alt="twitter"></div>
+        <div class="views">788</div>
+        <div class="movement up">&#9652; 233%</div>
+      </div> <!-- </boxes2> -->
+      <div class="boxes2">
+        <div class="page-views">Likes</div>
+        <div class="logo"><img src="images/icon-youtube.svg" alt="youtube"></div>
+        <div class="views">2172</div>
+        <div class="movement down">&#9662; 49%</div>
+      </div> <!-- </boxes2> -->
+      <div class="boxes2">
+        <div class="page-views">Total Views</div>
+        <div class="logo"><img src="images/icon-youtube.svg" alt="youtube"></div>
+        <div class="views">450</div>
+        <div class="movement down">&#9662; 62%</div>
       </div>
-      <div class="box2">
-        <p class="label">Likes</p>
-        <p class="num">52</p>
-        <img src="./images/icon-facebook.svg" class="social-icon overview-icon">
-        <p class="percent">2%</p>
-      </div>
-      <div class="box2">
-        <p class="label">Likes</p>
-        <p class="num">5462</p>
-        <img src="./images/icon-instagram.svg" class="social-icon overview-icon">
-        <p class="percent">2257%</p>
-      </div>
-      <div class="box2">
-        <p class="label">Profile Views</p>
-        <p class="num">52k</p>
-        <img src="./images/icon-instagram.svg" class="social-icon overview-icon">
-        <p class="percent">1375%</p>
-      </div>
-      <div class="box2">
-        <p class="label">Retweets</p>
-        <p class="num">117</p>
-        <img src="./images/icon-twitter.svg" class="social-icon overview-icon">
-        <p class="percent">303%</p>
-      </div>
-      <div class="box2">
-        <p class="label">Likes</p>
-        <p class="num">503</p>
-        <img src="./images/icon-twitter.svg" class="social-icon overview-icon">
-        <p class="percent">553%</p>
-      </div>
-      <div class="box2">
-        <p class="label">Likes</p>
-        <p class="num">107</p>
-        <img src="./images/icon-youtube.svg" class="social-icon overview-icon">
-        <p class="percent">19%</p>
-      </div>
-      <div class="box2">
-        <p class="label">Total Views</p>
-        <p class="num">1407</p>
-        <img src="./images/icon-youtube.svg" class="social-icon overview-icon">
-        <p class="percent">12%</p>
-      </div>
-</div>
-</main>
+    </div> <!-- </container2> -->
+  </div> <!-- </overview> -->
 <footer>
-  <div class="attribution">
+  <div class="by">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Carina Prates</a>.
+    Coded by <a href="#">Carina Prates</a>
   </div>
 </footer>
-
-<script src="index.js"></script>
-
-</main>
 </body>
+<script src="index.js"></script> 
 </html>

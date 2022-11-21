@@ -45,20 +45,19 @@ hr {
     display: none;
 }
 
-
-.header-mode {                      
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.color-toggle {                     /* div Alternar cor */
+.color-toggle {
     float: right;
     top: -83px;
     position: relative;
     width: 180px;
     display: flex;
-}    
-.toggle {                           /* "escrito Dark Mode" */
+}
+.header-mode {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+.toggle {
     color: hsl(228, 12%, 44%);
     font-weight: bold;
     font-size: 19px;
@@ -66,7 +65,7 @@ hr {
     margin-top: auto;
     margin-bottom: auto;
 }
-.switch {                           /* Botão */
+.switch {
     position: relative;
     display: inline-block;
     width: 70px;
@@ -89,8 +88,8 @@ hr {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #3f95cd;
-    background-image: linear-gradient(to right, #3f95cd , #3ecc8e);
+    background-color: hsl(228, 12%, 44%);
+    background-image: linear-gradient(to left, #3f95cd , #3ecc8e);
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -102,7 +101,7 @@ hr {
     width: 26px;
     left: 6px;
     bottom: 3px;
-    background-color: hsl(227, 47%, 96%);
+    background-color: #20222f;
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -110,7 +109,7 @@ hr {
   input:checked + .slider {
 
     background-color: #3f95cd; 
-    background-image: linear-gradient(to right, #3f95cd , #3ecc8e);
+    background-image: linear-gradient(to left, #3f95cd , #3ecc8e);
   }
   
   input:focus + .slider {
@@ -121,7 +120,7 @@ hr {
     -webkit-transform: translateX(32px);
     -ms-transform: translateX(32px);
     transform: translateX(32px);
-    background-color: white;
+    background-color: #20222f;
   }
   
   .slider.round {
@@ -168,7 +167,7 @@ hr {
 .card-top-instagram {
     width: 300px;
     height: 5px;
-    background-color: #e74f98; 
+    background-color: #e74f98; /* For browsers that do not support gradients */
     background-image: linear-gradient(to right, #ffbd67 , #e74f98);
     border-radius: 8px 8px 0px 0px;
 }
@@ -218,7 +217,7 @@ img {
     text-align: center;
     top: -20px;
     position: relative;
-    }
+}
 
 .delta {
     text-align: center;
@@ -239,7 +238,6 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
-
 .overview {
     align-content: space-evenly;
     width: 100%;
@@ -277,21 +275,18 @@ img {
     padding-top: 34px;
     font-size: 16px;
 }
-
 .logo {
     padding-top: 30px;
     padding-left: 20px;
     text-align: right;
     padding-right: 30px;
 }
-
 .views {
     padding-top: 5px;
     padding-left: 40px;
     font-size: 35px;
     font-weight: bold;
 }
-
 .movement {
     padding-top: 25px;
     text-align: right;
@@ -302,7 +297,7 @@ img {
     font-size: 14px; 
     text-align: center; 
     padding-bottom: 10px;
-    color: hsl(230, 17%, 14%);
+    color: hsl(0, 0%, 100%);
 }
 
 .by a {
@@ -337,7 +332,7 @@ img {
         width: 90%;
         margin-left: 20px;
     }
-    .container1 {                          
+    .container1 {
         top: -30px;
         transition: ease-in-out 0.5s; 
         }
@@ -364,13 +359,13 @@ img {
     }
 }
 
-@media (max-width: 640px) {
-    .container2 {
+@media (max-width: 640px){
+    .boxes1 {
         width: 350px;
-    }
+        }
     .boxes2 {
         width: 350px;
-    }
+        }
     .card-top-facebook {
         width: 350px;
     }
@@ -384,3 +379,42 @@ img {
         width: 350px;
     }
 }
+
+header {
+    background-color: #20222f;
+    }
+    html, body {
+    background-color: #1d2029;
+    }
+    h1 {
+    color: white;
+    }
+    h2 {
+
+    color: white;
+    }
+    .boxes1 {
+    background: #252b43;
+    }
+    .boxes2 {
+    background: #252b43;
+    }
+    .kpi {
+    color: white;
+    }
+    .views {
+    color: white;
+    }
+    p {
+    color: hsl(229.1, 25.6%, 66.3%);
+    }
+    .followers {
+    color: hsl(229.1, 25.6%, 66.3%);
+    }
+    .page-views {
+    color: hsl(229.1, 25.6%, 66.3%);
+    }
+    .attribution {
+        color: white;
+    }
+    
